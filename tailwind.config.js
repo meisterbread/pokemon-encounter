@@ -10,7 +10,7 @@ export default {
         'press-start': ['"Press Start 2P"', 'cursive']
       },
       backgroundImage:{
-        'menu' : "url('/assets/menu-bg.png')",
+        'menu' : "url('/src/assets/menu-bg.png')",
       }
     },
   },

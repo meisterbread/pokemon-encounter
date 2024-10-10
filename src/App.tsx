@@ -1,19 +1,16 @@
-import Button from './frontend/components/Button'
-import MainLayout from './frontend/layout/MainLayout'
+import { Routes, useNavigate, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import SelectPokemon from './pages/SelectPokemon'
 import './App.css'
-import Header from './frontend/components/Header'
-import MenuLayout from './frontend/layout/MenuLayout'
 
 function App() {
+  const nav = useNavigate()
   return (
     <>
-      <MainLayout>
-        <Header>Pokemon: Wild Adventures</Header>
-        <MenuLayout>
-          <Button>PLAY</Button>
-          <Button>EXIT</Button>
-        </MenuLayout>
-      </MainLayout>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/select-pokemon' element={<SelectPokemon/>}/>
+      </Routes>
     </>
   )
 }

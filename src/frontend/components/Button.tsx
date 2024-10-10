@@ -1,15 +1,16 @@
 interface ButtonProps {
     children : React.ReactNode
+    onClick : () => void;
 }
 
-const Button = ({children} : ButtonProps) => {
+const Button = ({children, onClick} : ButtonProps) => {
     return(
         <>
-            <button className="w-64 h-10 bg-blue-900 rounded-lg text-center text-sm font-press-start">
+            <button onClick={onClick} className="w-72 h-12 bg-blue-900 rounded-lg text-center text-lg font-press-start">
                 <label className="text-white">{children}</label>
             </button>
         </>
-    )
+    ) 
 }
 
 export default Button;

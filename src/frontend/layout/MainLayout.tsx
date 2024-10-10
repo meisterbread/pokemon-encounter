@@ -1,5 +1,3 @@
-import menu from '../../assets/menu-bg.png'
-
 interface MenuProps {
     children : React.ReactNode
 }
@@ -7,7 +5,7 @@ interface MenuProps {
 const MainLayout = ({children} : MenuProps) => {
     return(
         <>
-            <div className="flex flex-col justify-center items-center h-screen overflow-auto gap-36 bg-menu">
+            <div className='flex flex-col justify-center items-center h-screen overflow-auto gap-36 w-screen bg-menu bg-cover bg-center'>
                 {children}
             </div>
         </>
