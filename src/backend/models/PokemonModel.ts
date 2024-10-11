@@ -1,3 +1,13 @@
+export interface Pokemon {
+  name: string,
+  stats : Stat[],
+  sprites: {
+    front_default: string,
+    back_default: string,
+  }
+  
+}
+
 export interface Root {
     abilities: Ability[]
     base_experience: number
@@ -356,7 +366,6 @@ export interface Root {
   
   export interface Stat {
     base_stat: number
-    effort: number
     stat: Stat2
   }
   

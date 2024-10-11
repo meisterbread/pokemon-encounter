@@ -5,7 +5,7 @@ interface MenuProps {
 const MainLayout = ({children} : MenuProps) => {
     return(
         <>
-            <div className='flex flex-col justify-center items-center h-screen overflow-auto gap-36 w-screen bg-menu bg-cover bg-center'>
+            <div className='flex flex-col justify-center items-center h-screen overflow-auto gap-36 w-full bg-menu bg-cover bg-center'>
                 {children}
             </div>
         </>
